@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+@media(max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+/* Background images */
+.slide:first-child {
+  background: url('./images/1.jpg') no-repeat center center/cover;
+}
+
+
+.slide:nth-child(2) {
+  background: url('./images/IMG-20240403-WA0074.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(3) {
+  background: url('./images/IMG-20240403-WA0073.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(4) {
+  background: url('./images/IMG-20240403-WA0072.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(5) {
+  background: url('./images/IMG-20240403-WA0071.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(6) {
+  background: url('./images/IMG-20240403-WA0070.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(7) {
+  background: url('./images/IMG-20240403-WA0069.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(8) {
+  background: url('./images/IMG-20240403-WA0068.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(9) {
+  background: url('./images/IMG-20240403-WA0066.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(10) {
+  background: url('./images/IMG-20240403-WA0065.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(11) {
+  background: url('./images/IMG-20240403-WA0064.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(12) {
+  background: url('./images/IMG-20240403-WA0063.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(13) {
+  background: url('./images/IMG-20240403-WA0062.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(14) {
+  background: url('./images/IMG-20240403-WA0061.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(15) {
+  background: url('./images/IMG-20240403-WA0060.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(16) {
+  background: url('./images/IMG-20240403-WA0059.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(17) {
+  background: url('./images/IMG-20240403-WA0058.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(18) {
+  background: url('./images/IMG-20240403-WA0057.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(19) {
+  background: url('./images/IMG-20240403-WA0056.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(20) {
+  background: url('./images/IMG-20240403-WA0055.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(21) {
+  background: url('./images/IMG-20240403-WA0054.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(22) {
+  background: url('./images/IMG-20240403-WA0053.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(23) {
+  background: url('./images/IMG-20240403-WA0052.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(24) {
+  background: url('./images/IMG-20240403-WA0051.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(25) {
+  background: url('./images/IMG-20240403-WA0050.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(26) {
+  background: url('./images/IMG-20240403-WA0049.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(27) {
+  background: url('./images/IMG-20240403-WA0048.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(28) {
+  background: url('./images/IMG-20240403-WA0047.jpg') no-repeat center center/cover;
+}
+
+
+
+.slide:nth-child(29) {
+  background: url('./images/IMG-20240403-WA0046.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(30) {
+  background: url('./images/IMG-20240403-WA0045.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(31) {
+  background: url('./images/IMG-20240403-WA0044.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(32) {
+  background: url('./images/IMG-20240403-WA0043.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(33) {
+  background: url('./images/IMG-20240403-WA0042.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(34) {
+  background: url('./images/IMG-20240403-WA0041.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(35) {
+  background: url('./images/IMG-20240403-WA0040.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(36) {
+  background: url('./images/IMG-20240403-WA0039.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(37) {
+  background: url('./images/IMG-20240403-WA0035.jpg') no-repeat center center/cover;
+}
+
+
+.slide:nth-child(38) {
+  background: url('./images/IMG-20240403-WA0034.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(39) {
+  background: url('./images/IMG-20240403-WA0033.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(40) {
+  background: url('./images/IMG-20240403-WA0032.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(41) {
+  background: url('./images/IMG-20240403-WA0031.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(42) {
+  background: url('./images/IMG-20240403-WA0030.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(43) {
+  background: url('./images/IMG-20240403-WA0029.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(44) {
+  background: url('./images/IMG-20240403-WA0026.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(45) {
+  background: url('./images/IMG-20240403-WA0025.jpg') no-repeat center center/cover;
+}
+
+
+.slide:nth-child(46) {
+  background: url('./images/IMG-20240403-WA0024.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(47) {
+  background: url('./images/IMG-20240403-WA0023.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(48) {
+  background: url('./images/IMG-20240403-WA0022.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(49) {
+  background: url('./images/IMG-20240403-WA0021.jpg') no-repeat center center/cover;
+}
+
+
+
+
+
+
+
+.slide:nth-child(50) {
+  background: url('./images/1.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(51) {
+  background: url('./images/2.jpg') no-repeat center center/cover;
+}
+
+
+.slide:nth-child(52) {
+  background: url('./images/3.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(53) {
+  background: url('./images/4.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(54) {
+  background: url('./images/5.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(56) {
+  background: url('./images/6.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(57) {
+  background: url('./images/7.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(58) {
+  background: url('./images/8.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(59) {
+  background: url('./images/9.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(60) {
+  background: url('./images/10.jpg') no-repeat center center/cover;
+}
+
+
+.slide:nth-child(61) {
+  background: url('./images/11.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(62) {
+  background: url('./images/12.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(63) {
+  background: url('./images/13.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(64) {
+  background: url('./images/14.jpg') no-repeat center center/cover;
+}
+
+
+
+
+.slide:nth-child(65) {
+  background: url('./images/15.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(66) {
+  background: url('./images/16.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(67) {
+  background: url('./images/17.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(68) {
+  background: url('./images/18.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(69) {
+  background: url('./images/19.jpg') no-repeat center center/cover;
+}
+
+
+.slide:nth-child(70) {
+  background: url('./images/20.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(71) {
+  background: url('./images/21.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(72) {
+  background: url('./images/22.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(73) {
+  background: url('./images/23.jpg') no-repeat center center/cover;
+}
+
+
+.slide:nth-child(74) {
+  background: url('./images/24.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(75) {
+  background: url('./images/25.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(76) {
+  background: url('./images/26.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(77) {
+  background: url('./images/27.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(78) {
+  background: url('./images/28.jpg') no-repeat center center/cover;
+}
+
+
+.slide:nth-child(79) {
+  background: url('./images/29.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(80) {
+  background: url('./images/30.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(81) {
+  background: url('./images/31.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(82) {
+  background: url('./images/32.jpg') no-repeat center center/cover;
+}
+
